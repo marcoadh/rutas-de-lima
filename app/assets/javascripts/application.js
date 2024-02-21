@@ -13,4 +13,18 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require jquery3
+//= require popper
+//= require bootstrap
+//  require cable
+//= require vendor
+//= require_self
+//= require_tree ./scripts
+//= require_tree ./controllers
+
+(function () {
+  this.App || (this.App = {})
+
+  App.Stimulus = Stimulus.Application.start()
+
+}).call(this);

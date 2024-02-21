@@ -1,0 +1,7 @@
+#geofences {
+  height: calc(100vh - 100px);
+
+  & .geofences-popup {
+    width: 500px;
+  }
+}

@@ -1,0 +1,34 @@
+<div id="geofences" class="d-flex" data-controller="geofences">
+  <div class="h-100 geofences-popup">
+    <div class="d-flex align-items-center p-3 border">
+      <span class="fs-18 font-weight-bold">Geocercas</span>
+
+      <div class="btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+        <label class="btn bg-celeste btn-sm text-white active">
+          <input type="radio" name="options" checked> Lista
+        </label>
+        <label class="btn btn-light btn-sm text-dark">
+          <input type="radio" name="options"> Grupos
+        </label>
+      </div>
+    </div>
+
+    <div class="d-flex align-items-center p-3">
+      <%= link_to "", class: "btn bg-celeste btn-sm mr-2 d-flex align-items-center text-white" do %>
+        <%= image_tag "add.svg", class: "mr-3" %> Crear
+      <% end %>
+      <%= link_to "", class: "btn bg-verde btn-sm mr-2 d-flex align-items-center text-white" do %>
+        <%= image_tag "document-download.svg", class: "mr-3" %> Importar
+      <% end %>
+      <%= link_to "", class: "btn bg-amarillo btn-sm d-flex align-items-center text-white" do %>
+        <%= image_tag "document-upload.svg", class: "mr-3" %> Exportar
+      <% end %>
+    </div>
+
+    <div class="d-flex align-items-center p-3">
+      <input type="search" class="form-control form-control-sm fz-sm ml-auto" placeholder="Buscar">
+    </div>
+  </div>
+
+  <div class="map h-100 w-100" data-geofences-target="map"></div>
+</div>

@@ -1,0 +1,13 @@
+$color_2: #F8F9FA;
+$celeste: #01AFEC;
+
+.custom-table {
+  & thead {
+    color: $celeste;
+    background-color: $color_2;
+
+    & tr th {
+      border: transparent;
+    }
+  }
+}

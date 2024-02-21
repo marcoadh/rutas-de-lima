@@ -1,0 +1,28 @@
+<header>
+  <div class="navigation">
+    <%= image_tag "logo-rutas-lima.svg", alt: "Logo Rutas de Lima", class: "logo-web" %>
+    <div class="menu">
+      <li><%= link_to "Dashboard", dashboard_index_path, class: active_class(dashboard_index_path) %></li>
+      <li><%= link_to "Geocercas", geofences_path, class: active_class(geofences_path) %></li>
+      <li><%= link_to "Reportes", reports_path, class: active_class(reports_path) %></li>
+      <li><%= link_to "Diagnóstico", "", class: active_class("") %></li>
+      <li><%= link_to "Telemetría", "", class: active_class("") %></li>
+      <li><%= link_to "Mantenimiento", "", class: active_class("") %></li>
+      <li><%= link_to "Recordatorio", "", class: active_class("") %></li>
+      <li><%= link_to "Ajustes", "", class: active_class("") %></li>
+      <li><a href="#"><%= image_tag "notification.svg", width: "24" %></a></li>
+      <li><a href="#"><%= image_tag "headset.svg", width: "30" %></a></li>
+      <div class="d-flex" style="gap: 15px;">
+        <div class="avatar">
+          <span class="rounded-circle">R</span>
+        </div>
+        <div class="avatar-detail">
+          <div class="avatar-detail--title">Rosario Castro Torres</div>
+          <div class="avatar-detail--role text-color-celeste">
+            <%= image_tag "filter-alt.svg" %> Administrar cuenta
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

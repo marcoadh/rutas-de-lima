@@ -1,0 +1,40 @@
+$color_2: #F8F9FA;
+$celeste: #01AFEC;
+$verde: #6EA52D;
+$amarillo: #F9A61A;
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.text-color-celeste {
+  color: $celeste;
+}
+
+.bg-celeste {
+  background: $celeste;
+}
+
+.bg-celeste-transparent {
+  background: #01AFEC0D;
+}
+
+.bg-verde {
+  background: $verde;
+}
+
+.bg-amarillo {
+  background: $amarillo;
+}

@@ -1,0 +1,89 @@
+$fs_12: 12px;
+$fs_13: 13px;
+$fs_14: 14px;
+$fs_16: 16px;
+$color_1: #FFFFFF;
+$color_2: #F8F9FA;
+$color_3: #ACB5BD;
+$color_4: #495057;
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 0 40px;
+  background-color: $color_1;
+  z-index: 10;
+
+  & .navigation {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    & .menu {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+
+      & li {
+        margin: auto;
+      }
+
+      & li a {
+        text-decoration: none;
+        color: $color_3;
+
+        &.active {
+          color: $color_4;
+          font-weight: 700;
+        }
+      }
+    }
+
+    & .avatar {
+      height: 45px;
+      width: 45px;
+
+      & span {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color_2;
+      }
+    }
+
+    & .avatar-detail .avatar-detail--title {
+      font-size: $fs_14;
+    }
+
+    & .avatar-detail .avatar-detail--role {
+      font-size: $fs_12;
+    }
+  }
+
+  @media screen and (max-width:1440px) {
+    & .logo-web {
+      width: 240px;
+    }
+
+    & .navigation .menu {
+      gap: 15px;
+
+      & li a {
+        font-size: $fs_13;
+      }
+    }
+  }
+
+  @media screen and (max-width:1024px) {
+    & .navigation {
+      justify-content: center;
+
+      & .logo-web {
+        display: none;
+      }
+    }
+  }
+}
