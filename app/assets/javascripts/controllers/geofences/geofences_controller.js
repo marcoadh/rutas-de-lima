@@ -19,7 +19,6 @@
         this.map.off()
         this.map.remove()
         this.map = null
-        App.tracking.map = null
       }
     }
   })
